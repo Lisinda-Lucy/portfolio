@@ -6,55 +6,61 @@
 <title>About | Lucy Digital</title>
 
 <link rel="icon" href="assets/favicon.ico">
-
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
 body{
-  background:#e2e2e2;
+  background:#fafafa;
   color:#1c0f13;
   font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Ubuntu,'Helvetica Neue',sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6{color:#6e7e85;}
+h1,h2,h3,h4,h5,h6{
+  color:#6e7e85;
+}
 
 header{
-  background:#e2e2e2;
-  border-bottom:1px solid #cfcfd6;
+  background:#fafafa;
+  border-bottom:1px solid #e5e5e5;
 }
 
-nav a{color:#1c0f13;}
-nav a:hover{color:#3b7cec;}
+/* logo + nav same as heading color */
+header a,
+nav a{
+  color:#6e7e85;
+}
+
+nav a:hover{
+  opacity:.7;
+}
 
 .card{
-  background:#bbbac6;
-  border:1px solid #a9a8b4;
+  background:#e2e2e2;
+  border:1px solid #d6d6d6;
 }
 
-.subnav a{
-  border:1px solid #a9a8b4;
+/* primary button */
+.btn-primary{
+  background:#b7cece;
   color:#1c0f13;
 }
 
-.subnav a.active{
-  background:#3b7cec;
-  color:#fafafa;
-  border-color:#3b7cec;
+/* secondary button */
+.btn-secondary{
+  background:#bbbac6;
+  color:#1c0f13;
 }
 
-button,
-.bg-brand{
-  background:#3b7cec !important;
-  color:#fafafa !important;
+.btn-primary:hover{
+  opacity:.9;
 }
 
-button:hover,
-.bg-brand:hover{
-  background:#2f69c9 !important;
+.btn-secondary:hover{
+  opacity:.9;
 }
 
 footer{
-  border-top:1px solid #cfcfd6;
+  border-top:1px solid #e5e5e5;
   color:#1c0f13;
 }
 </style>
@@ -72,7 +78,7 @@ footer{
 <a href="services.html">Services</a>
 <a href="about.html">About</a>
 <a href="contact.html">Contact</a>
-<a href="resume.html" class="px-4 py-2 rounded bg-brand">Resumé</a>
+<a href="resume.html" class="px-4 py-2 rounded btn-primary">Resumé</a>
 </nav>
 
 </div>
@@ -95,8 +101,8 @@ My focus is connecting strategy, data, and execution so marketing activity becom
 </p>
 
 <div class="mt-6 flex gap-3">
-<a href="work.html" class="px-5 py-3 rounded border border-[#a9a8b4]">See Work</a>
-<a href="services.html" class="px-5 py-3 rounded bg-brand">Services</a>
+<a href="work.html" class="px-5 py-3 rounded border border-[#d0d0d0] btn-secondary">See Work</a>
+<a href="services.html" class="px-5 py-3 rounded btn-primary">Services</a>
 </div>
 </div>
 
@@ -142,7 +148,7 @@ Travel, SaaS, finance, ecommerce, media, and professional services.
 <h3 class="font-semibold">Work with me</h3>
 <p class="text-sm">Consulting, strategy, and fractional leadership.</p>
 </div>
-<a href="contact.html" class="px-5 py-3 rounded bg-brand">Get in touch</a>
+<a href="contact.html" class="px-5 py-3 rounded btn-primary">Get in touch</a>
 </div>
 
 </div>
